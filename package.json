@@ -32,6 +32,7 @@
     "@nxext/preact": "^16.2.0",
     "@nxext/solid": "^16.2.0",
     "@nxext/svelte": "^16.2.0",
+    "@nxrocks/nx-flutter": "^7.0.3",
     "@preact/preset-vite": "^2.5.0",
     "@remix-run/dev": "^1.16.1",
     "@remix-run/eslint-config": "^1.16.1",
