@@ -2,6 +2,12 @@
   "name": "@tic-tac-toe-framework/source",
   "version": "0.0.0",
   "license": "MIT",
+  "engines": {
+    "node": "18.x",
+    "yarn": "please-use-pnpm",
+    "npm": "please-use-pnpm",
+    "pnpm": "8.x"
+  },
   "scripts": {},
   "private": true,
   "dependencies": {},
