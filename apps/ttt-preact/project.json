@@ -1,0 +1,72 @@
+{
+  "name": "ttt-preact",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/ttt-preact/src",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/ttt-preact/**/*.{ts,spec.ts,tsx}"]
+      }
+    },
+    "build": {
+      "executor": "@nx/vite:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/apps/ttt-preact"
+      },
+      "configurations": {
+        "development": {
+          "mode": "development"
+        },
+        "production": {
+          "mode": "production"
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nx/vite:dev-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "ttt-preact:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "ttt-preact:build:development",
+          "hmr": true
+        },
+        "production": {
+          "buildTarget": "ttt-preact:build:production",
+          "hmr": false
+        }
+      }
+    },
+    "preview": {
+      "executor": "@nx/vite:preview-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "ttt-preact:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "ttt-preact:build:development"
+        },
+        "production": {
+          "buildTarget": "ttt-preact:build:production"
+        }
+      }
+    },
+    "test": {
+      "executor": "@nx/vite:test",
+      "outputs": ["coverage/apps/ttt-preact"],
+      "options": {
+        "passWithNoTests": true,
+        "reportsDirectory": "../../coverage/apps/ttt-preact"
+      }
+    }
+  }
+}
