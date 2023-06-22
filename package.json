@@ -13,17 +13,30 @@
   "devDependencies": {
     "@builder.io/qwik": "~1.1.1",
     "@builder.io/qwik-city": "~1.1.1",
+    "@nx/cypress": "16.3.2",
     "@nx/eslint-plugin": "16.3.2",
     "@nx/js": "16.3.2",
     "@nx/linter": "16.3.2",
+    "@nx/remix": "^16.3.1",
     "@nx/vite": "16.3.2",
     "@nx/workspace": "16.3.2",
+    "@remix-run/dev": "^1.16.1",
+    "@remix-run/eslint-config": "^1.16.1",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.4.3",
     "@types/node": "^18.16.1",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.8",
     "@typescript-eslint/eslint-plugin": "^5.58.0",
     "@typescript-eslint/parser": "^5.58.0",
+    "@vitejs/plugin-react": "^3.0.0",
+    "@vitest/coverage-c8": "^0.31.0",
     "@vitest/ui": "^0.31.0",
-    "eslint": "~8.15.0",
+    "cypress": "^12.11.0",
+    "eslint": "^8.27.0",
     "eslint-config-prettier": "8.1.0",
+    "eslint-plugin-cypress": "^2.10.3",
     "eslint-plugin-qwik": "~1.1.1",
     "jsdom": "~20.0.3",
     "node-fetch": "~3.3.0",
@@ -38,5 +51,12 @@
     "vite-tsconfig-paths": "~4.2.0",
     "vitest": "^0.31.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@remix-run/node": "^1.16.1",
+    "@remix-run/react": "^1.16.1",
+    "@remix-run/serve": "^1.16.1",
+    "isbot": "^3.6.8",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
 }
