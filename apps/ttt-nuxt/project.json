@@ -1,0 +1,8 @@
+{
+  "name": "ttt-nuxt",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/ttt-nuxt/src",
+  "projectType": "application",
+  "tags": [],
+  "targets": {}
+}
